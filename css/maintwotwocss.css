@@ -1,0 +1,108 @@
+body {
+    background: url(blbl.png);
+    font-family: 'Open Sans', sans-serif;
+    color: #7581a1;
+    font-size: 16px;
+    line-height: 26px;
+
+    background-repeat: round;
+
+
+}
+
+
+
+.page-team{
+    text-align: center;/*text center*/
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 0 60px 0;
+}
+.area {
+    text-align: center;
+    font-size: 3.5em;
+    color: #fff;
+    letter-spacing: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: blur 5.75s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+.title-40{
+    font-weight: 600;
+    color:  #1085e4;;
+    line-height:1.2 ;
+    font-size: 51px;
+    letter-spacing: -1.1px;
+
+}
+h2{
+    font-weight: 600;
+    color:  #1085e4;;
+    line-height:1.2 ;
+    font-size: 20px;
+
+
+
+
+
+
+}
+
+.avatar{
+
+    box-shadow: 0 0 80px #f3f3f3;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+
+}
+.social-icons>li {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+
+}
+.social-icons a {
+    position: relative;
+    background-color: #eee;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: background-color .3s ease-in-out;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 24px #f3f3f3;
+}
+.social-icons a:hover {
+    background-color: #e0e0e0;
+}
+.social-icons a::before {
+    content: "";
+    position: absolute;
+    width: 2.2rem;
+    height: 2.2rem;
+    left: 19px;
+    top: 18px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+.social-icons .social-icon-twitter::before {
+
+    background-image: url(insta.png);
+}
+
+.social-icons .social-icon-vk::before {
+    background-image: url(vk.png);
+}
+.social-icons .social-icon-telegram::before {
+    background-image: url(Telegram_Messenger.png);
+}

@@ -1,0 +1,227 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #7581a1;
+    font-size: 16px;
+    line-height: 26px;
+    background: url(blbl.png);
+
+    background-repeat: no-repeat;
+
+
+}
+body1 {
+    margin: 51px;
+    padding: -1px 251px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textup{
+    padding: 81px 0 50px 0;
+    text-align: center;
+
+}
+
+
+.area {
+    text-align: center;
+    font-size: 6.5em;
+    color: #fff;
+    letter-spacing: -7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: blur 5.75s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+
+
+    to {
+        text-shadow:0px 0px 5px #fff,
+        0px 0px 50px #dcebff,
+        0px 0px 150px #d3e6ff;
+
+
+    }
+    from {
+        text-shadow: 0px 0px 150px #d3e6ff,
+        0px 0px 50px #dcebff,
+        0px 0px 10px #fff,
+        0px 0px 5px #fff;
+
+    }
+
+
+}
+
+
+
+
+.title-40{
+    font-weight: 600;
+    color: #1085e4;;
+    line-height:1.2 ;
+    font-size: 40px;
+    letter-spacing: -1.1px;
+
+}
+.wrap{
+    max-width: 910px;
+    margin: 0 auto; /*закрепляет в середине даже при мастштабирование*/
+    padding-left: 15px ;
+    padding-right: 15px;}
+.title-40 span{
+    display: block;
+    font-size: 37px;
+    margin-bottom: 0px;
+
+    letter-spacing: 3.5px;
+    color: #1085e4;
+    font-weight: 800;
+    text-transform: uppercase;
+
+}
+.box-price {
+
+    justify-content: space-between;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+.box-price-item ul{
+    list-style-type: none ;
+    padding-left: 0;
+    margin-top: 34px;
+    margin-bottom: 59px;
+    font-size: 18px;
+}
+
+.box-price-item ul>li{
+    margin-bottom: 14px;
+}
+
+
+
+
+.box-price-item{
+    background-color: #f5faff;
+    flex-basis: 25%;
+    position: relative;
+    padding: 90px 0 9px 0;
+    box-shadow: 0 0 24px #f3f3f3;
+
+}
+
+
+.box-price-item h3{
+    font-size: 70px;
+    letter-spacing: -1px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #000958;
+}
+
+.box-price-item p{
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #0084ff;
+}
+input,select{
+    width: 306px;
+    text-align: center;
+    size: 15px;
+
+    padding: 28px 9px 28px 10px;
+    text-decoration: none;
+    border-radius: 35px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid #dce4ec;
+    font-size: 16px;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+._error .form-control {
+    box-shadow: 0 0 100px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000;
+
+}
+
+li{
+    margin-bottom: 14px;
+}
+
+
+ul{
+    list-style-type: none ;
+    padding-left: 0;
+    margin-top: 34px;
+    margin-bottom: 59px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 27.5px;;
+    color: #fff;
+    letter-spacing: 15px;
+    font-weight: 20;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 190px 19px 0 0;
+
+
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+
+.wrapper {
+    margin: 51px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+.form__button {
+    font-size: 20px;
+    height: 53px;
+
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    text-decoration: none;
+
+    border:  3px solid;
+    background-color: transparent;
+    border-radius: 0.25em;
+    color: #2196f3;
+    text-transform: uppercase;
+    transition: all 0.5s
+
+}
+
+.form__button:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
