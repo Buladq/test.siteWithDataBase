@@ -1,0 +1,55 @@
+CREATE TABLE `fresham` (
+ `Id_fresh` int(11) NOT NULL,
+ PRIMARY KEY (`Id_fresh`),
+ CONSTRAINT `fresham_ibfk_1` FOREIGN KEY (`Id_fresh`) REFERENCES `persons` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+inviters	CREATE TABLE `inviters` (
+ `Id_invires` int(11) NOT NULL AUTO_INCREMENT,
+ `Name` varchar(30) NOT NULL,
+ `Email` varchar(30) NOT NULL,
+ PRIMARY KEY (`Id_invires`),
+ UNIQUE KEY `Email` (`Email`)
+
+
+CREATE TABLE `junior` (
+ `Id_jun` int(11) NOT NULL,
+ PRIMARY KEY (`Id_jun`),
+ CONSTRAINT `junior_ibfk_1` FOREIGN KEY (`Id_jun`) REFERENCES `persons` (`Id`) ON DELETE CASCADE
+
+
+CREATE TABLE `middle` (
+ `Id_mid` int(11) NOT NULL,
+ PRIMARY KEY (`Id_mid`),
+ CONSTRAINT `middle_ibfk_1` FOREIGN KEY (`Id_mid`) REFERENCES `persons` (`Id`) ON DELETE CASCADE
+
+
+CREATE TABLE `persons` (
+ `Id` int(11) NOT NULL AUTO_INCREMENT,
+ `Name` varchar(30) NOT NULL,
+ `Surname` varchar(30) NOT NULL,
+ `patronymic` varchar(30) NOT NULL,
+ `birthday` date DEFAULT '2018-12-07',
+ `Orazovanie_ID` int(11) NOT NULL,
+ `poll_ID` int(11) NOT NULL,
+ PRIMARY KEY (`Id`),
+ KEY `Orazovanie_ID` (`Orazovanie_ID`),
+ KEY `poll_ID` (`poll_ID`),
+ CONSTRAINT `persons_ibfk_1` FOREIGN KEY (`Orazovanie_ID`) REFERENCES `vidobrazovaniya` (`Id`) ON DELETE CASCADE,
+ CONSTRAINT `persons_ibfk_2` FOREIGN KEY (`poll_ID`) REFERENCES `polls` (`Id_dlya_pola`) ON DELETE CASCADE
+
+
+CREATE TABLE `polls` (
+ `Id_dlya_pola` int(11) NOT NULL AUTO_INCREMENT,
+ `NazvaniePolla` varchar(30) NOT NULL,
+ PRIMARY KEY (`Id_dlya_pola`)
+
+
+CREATE TABLE `senior` (
+ `Id_sen` int(11) NOT NULL,
+ PRIMARY KEY (`Id_sen`),
+ CONSTRAINT `senior_ibfk_1` FOREIGN KEY (`Id_sen`) REFERENCES `persons` (`Id`) ON DELETE CASCADE
+
+CREATE TABLE `vidobrazovaniya` (
+ `Id` int(11) NOT NULL AUTO_INCREMENT,
+ `Nazvanie_Obr` varchar(20) NOT NULL,
+ PRIMARY KEY (`Id`)
